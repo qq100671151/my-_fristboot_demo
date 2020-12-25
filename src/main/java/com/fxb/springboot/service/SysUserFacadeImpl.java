@@ -4,6 +4,7 @@ import com.fxb.springboot.dao.SysUserDao;
 import com.fxb.springboot.entity.SysUserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author fengxianbin
@@ -11,6 +12,7 @@ import org.springframework.stereotype.Service;
  * @create 2020-12-22 9:44
  */
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class SysUserFacadeImpl implements  SysUserFacade{
 
     @Autowired
