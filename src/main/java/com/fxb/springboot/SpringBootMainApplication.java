@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description: springboot启动类
  * @create 2020-12-24 11:43
  */
-//@ImportResource(locations = {"classpath:spring-hibernate.xml"})
 @SpringBootApplication
 public class SpringBootMainApplication {
     public static void main(String[] args) {
