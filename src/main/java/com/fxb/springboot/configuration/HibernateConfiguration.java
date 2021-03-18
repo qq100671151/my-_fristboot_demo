@@ -38,6 +38,7 @@ public class HibernateConfiguration {
         hibernateProperties.put("hibernate.cache.use_query_cache","false");
         hibernateProperties.put("hibernate.cache.use_second_level_cache","false");
         lb.setHibernateProperties(hibernateProperties);
+
         return lb;
     }
 }
